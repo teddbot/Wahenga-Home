@@ -1417,6 +1417,8 @@ header css
 	padding: 28px 20px 24px;
 }
 
+
+
 .header_v1 .navbar-expand-lg .navbar-nav .nav-link {
 	font-family: 'Poppins', sans-serif;
 	text-transform: none;
@@ -1666,7 +1668,7 @@ header css
 }
 
 .header_v2 .site-header__sidemenu-nav {
-	margin-top: 16px;
+	margin-top: 0!important;
 	margin-left: 0px;
 	color: #f78400;
 }
@@ -1932,6 +1934,9 @@ header css
 	background: #003383;
 }
 
+.advance {
+	display: none;
+}
 
 /*
 * 13. search-popup styles
@@ -4632,7 +4637,8 @@ ripple video btn css
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
-  object-fit: contain;
+    object-fit: contain;
+    text-align: center;
 }
 
 .doctor_box.type_two .image_box .overlay {
@@ -4710,18 +4716,19 @@ ripple video btn css
 	-ms-transition: all .6s ease-in-out;
 	-o-transition: all .6s ease-in-out;
 	transition: all .6s ease-in-out;
-	width: 100%;
+	width: 60%;
+	margin:0 auto;
 	display: block;
 	margin-top: -66px;
 	height: 50px;
 	line-height: 50px;
 	margin-bottom: 20px;
-	padding-left: 60px;
+	/* padding-left: 60px; */
 	font-size: 16px;
 	font-weight: 400;
 	z-index: 0;
 	overflow: hidden;
-	text-align: left;
+	text-align: center;
 }
 
 .doctor_box.type_two .content_box .contact_doctor::before {
@@ -9703,7 +9710,16 @@ media queries responsive css
 ====================================================================
 
 ***/
+@media screen and (max-width:520px) {
+	.theme_btn.tp_two {
+		display: none;
+	}
 
+	.advance {
+		display: block;
+	}
+	
+}
 @media(max-width:1199px) {
 	.banner.type_one {
 		min-height: 700px;
@@ -10269,3 +10285,4 @@ media queries responsive css
 	.page_wapper{
 		   overflow:hidden;	
 	   }}
+
