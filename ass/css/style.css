@@ -1938,6 +1938,17 @@ header css
 	display: none;
 }
 
+#dl:before {
+	content:" ";
+	display: block;
+	margin: 0 auto;
+	width:50%;
+	padding-top: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+    border-bottom-color: lightgrey;
+}
+
 /*
 * 13. search-popup styles
 */
